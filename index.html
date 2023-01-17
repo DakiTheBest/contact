@@ -21,10 +21,25 @@
       <form>
         <h2>How can we help you?</h2>
         <section>
-          <label for="user-name">Your Name</label>
-          <input type="text" name="name" id="user-name">
-          <label>Your e-mail adress</label>
-          <input type="email" name="email" id="user-email">
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" name="name" id="user-name" />
+            </li>
+            <li>
+              <label for="user-email">Your e-mail adress</label>
+              <input type="email" name="email" id="user-email" />
+            </li>
+            <li>
+              <label for="user-phone">Your Phone Number</label>
+              <input type="tel" name="phone" id="user-phone">
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="user-msg">Your Message</label>
+          <textarea name="msg" id="user-msg" rows="10"></textarea>
         </section>
       </form>
     </main>
