@@ -8,10 +8,11 @@ h1 {
 
 body {
   background-color: rgb(240, 255, 250);
+  margin: 0;
 }
 
 form {
-  width: 50rem;
+  width: 40rem;
   margin: 5rem auto;
   background-color: white;
   border: 1px solid rgb(212, 212, 212);
@@ -33,7 +34,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   display: block;
   margin-bottom: 1rem;
@@ -43,4 +45,57 @@ textarea {
   border-radius: 4px;
   padding: 0.5rem;
   color: rgb(61, 58, 58);
+}
+
+input:focus,
+textarea:focus{
+  background-color: rgb(155, 183, 226);
+  border-color: rgb(87, 87, 255);
+}
+
+textarea {
+  resize: none;
+}
+
+.reply-mtd {
+  display: flex;
+}
+
+.reply-mtd input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.reply-mtd input,
+.reply-mtd label {
+  margin-bottom: 0;
+}
+
+#buttons {
+  display: flex;
+  justify-content: right;
+}
+
+button {
+  font: inherit;
+  border-color: rgb(38, 139, 255);
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 6rem;
+  margin-left: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(177, 223, 253);
+}
+
+button[type=submit] {
+  color: white;
+  background-color: rgb(34, 34, 122);
+}
+
+button[type=submit]:hover {
+  background-color: rgb(26, 104, 194);
 }
